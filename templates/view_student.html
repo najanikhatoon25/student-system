@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>View Students</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<body>
+
+<div class="container2">
+
+<h1 id="heading">Student Records</h1>
+
+<table>
+
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Email</th>
+    <th>Gender</th>
+    <th>Course</th>
+</tr>
+
+{% for student in students %}
+<tr>
+    <td>{{ student[0] }}</td>
+    <td>{{ student[1] }}</td>
+    <td>{{ student[3] }}</td>
+    <td>{{ student[2] }}</td>
+    <td>{{ student[4] }}</td>
+    <td>{{student[5]}}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</div>
+
+</body>
+</body>
+</html>

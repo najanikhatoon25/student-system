@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+
+    <div class="card">
+
+        <h1 id="heading">Create student</h1>
+
+        <form action="/add"  method="POST">
+
+            <input
+            type="text"
+            name="name"
+            placeholder="Student Name">
+
+
+             <input
+            type="email"
+            name="email"
+            placeholder="Email">
+
+            <input
+            type="number"
+            name="age"
+            placeholder="Age">
+
+            <select name="gender" required>
+              <option value="">Select Gender</option> 
+              <option value="Male">Male</option> 
+               <option value="Female">Female</option>  
+                 <option value="LGBTQ+">LGBTTQ+</option>  
+ 
+            </select>
+
+
+
+            <input
+            type="text"
+             name="Course"
+            placeholder="Course">
+          
+            
+
+            
+
+            <button class="btn">
+                Add Student
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
